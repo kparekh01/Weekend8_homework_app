@@ -1,0 +1,12 @@
+<h1>Homework angular API!</h1>
+
+<div ng-app="homework">
+  <div ng-controller="homework_ctlr">
+    <div ng-repeat="ticket in tickets">
+      <h3>Code: {{ ticket.code }}</h3>
+        <ul>Ticket definition: {{ ticket.definition }}</ul>
+        <ul>Below 96th street in Manhattan cost: {{ ticket.manhattan_96th_st_below }}</ul>
+        <ul>All other areas cost: {{ ticket.all_other_areas }}</ul>
+    </div>
+  </div>
+</div>
